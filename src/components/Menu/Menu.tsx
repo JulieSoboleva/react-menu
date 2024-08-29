@@ -1,13 +1,12 @@
 import { NavItem } from './NavItem';
-import { baseURL } from '../../App';
 import './Menu.css';
 
 export default function Menu() {
     const navItems = [
-        { label: 'главная', link: `${baseURL}/` },
-        { label: 'дрифт-такси', link: `${baseURL}/drift` },
-        { label: 'time attack', link: `${baseURL}/timeattack` },
-        { label: 'forza karting', link: `${baseURL}/forza` },
+        { label: 'главная', link: '/' },
+        { label: 'дрифт-такси', link: '/drift' },
+        { label: 'time attack', link: '/timeattack' },
+        { label: 'forza karting', link: '/forza' },
     ];
 
     return (

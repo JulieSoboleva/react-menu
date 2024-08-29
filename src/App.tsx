@@ -6,19 +6,17 @@ import TimeAttackPage from './components/Pages/TimeAttackPage';
 import Menu from './components/Menu/Menu';
 import './App.css';
 
-export const baseURL = '/react-menu';
-
 export default function App() {
   return (
-    <Router >
+    <Router basename='/react-menu'>
       <div>
         <Menu />
         <main className='page'>
           <Routes>
-            <Route path={`${baseURL}/`} element={<HomePage />} />
-            <Route path={`${baseURL}/drift`} element={<DriftPage />} />
-            <Route path={`${baseURL}/timeattack`} element={<TimeAttackPage />} />
-            <Route path={`${baseURL}/forza`} element={<ForzaPage />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/drift" element={<DriftPage />} />
+            <Route path="/timeattack" element={<TimeAttackPage />} />
+            <Route path="/forza" element={<ForzaPage />} />
           </Routes>
         </main>
       </div>
